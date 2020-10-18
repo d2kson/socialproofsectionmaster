@@ -1,0 +1,268 @@
+:root {
+  --vdmagenta: hsl(300, 43%, 22%);
+  --pink: hsl(333, 80%, 67%);
+  --dgmagenta: hsl(303, 10%, 53%);
+  --lgmagenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+.vdmagenta {
+  color: var(--vdmagenta);
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.dgmagenta {
+  color: var(--dgmagenta);
+}
+
+.lgmagenta {
+  color: var(--lgmagenta);
+}
+
+.white {
+  color: var(--white);
+}
+.bold {
+  font-weight: 700;
+}
+.medium {
+  font-weight: 500;
+}
+.margindown {
+  margin-bottom: 30px;
+}
+
+.margindownxl {
+  margin-bottom: 60px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  display: none;
+}
+
+p {
+  line-height: 1.3;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  background-image: url("images/bg-pattern-top-desktop.svg"),
+    url("images/bg-pattern-bottom-desktop.svg");
+  background-position: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  height: 100vh;
+  max-width: 1440px;
+  padding: 100px 160px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.h1box {
+  width: 300px;
+}
+
+.pbox {
+  width: 400px;
+}
+.area,
+.boxcontainer,
+.part1,
+.part2,
+.box,
+.ratingbox,
+.ratingboxcontainer,
+.titlearea {
+  display: flex;
+}
+
+.area {
+  justify-content: space-between;
+  max-width: 1440px;
+}
+.part1 {
+  flex-direction: column;
+}
+
+.part2 {
+  margin-right: 100px;
+}
+
+.ratingboxcontainer {
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 50px;
+}
+
+.ratingbox {
+  height: 50px;
+  width: 450px;
+  background-color: var(--lgmagenta);
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.starbox {
+  margin-left: 10px;
+}
+
+.reviewbox {
+  margin-right: 50px;
+}
+
+.headshot {
+  margin-right: 25px;
+}
+.circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.boxcontainer {
+}
+
+.box {
+  height: 230px;
+  width: 350px;
+  background-color: var(--vdmagenta);
+  border-radius: 10px;
+  margin-right: 30px;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.ratingbox1 {
+  transform: translateX(-50px);
+}
+
+.ratingbox3 {
+  transform: translateX(50px);
+}
+
+.box2 {
+  transform: translateY(15px);
+}
+
+.box3 {
+  transform: translateY(30px);
+}
+@media screen and (max-device-width: 375px) {
+  body {
+    max-width: 375px;
+    height: 0;
+    background-image: url("images/bg-pattern-top-mobile.svg"),
+      url("images/bg-pattern-bottom-mombile.svg");
+    background-position: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .pbox {
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .area {
+    max-width: 375px;
+    flex-direction: column;
+  }
+
+  .part2 {
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .ratingboxcontainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .ratingbox {
+    height: 75px;
+    width: 320px;
+    background-color: var(--lgmagenta);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .starbox {
+    margin-left: 10px;
+  }
+
+  .reviewbox {
+    margin-right: 0;
+  }
+
+  .headshot {
+    margin-right: 25px;
+  }
+  .circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .boxcontainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-40px);
+  }
+
+  .box {
+    height: 250px;
+    width: 320px;
+    background-color: var(--vdmagenta);
+    border-radius: 10px;
+    margin-right: 0;
+    padding: 30px;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .ratingbox1 {
+    transform: translateX(0);
+  }
+
+  .ratingbox3 {
+    transform: translateX(0);
+  }
+
+  .box2 {
+    transform: translateY(0);
+  }
+
+  .box3 {
+    transform: translateY(0);
+  }
+}
